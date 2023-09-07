@@ -31,7 +31,7 @@ function App() {
         console.log(formData)
 
 
-        fetch(`/selection?${new URLSearchParams(formData)}`)
+        fetch(`https://restaurant-roulette-reacttw.onrender.com/selection?${new URLSearchParams(formData)}`)
         .then((res) => res.json())
         // .then((data) => setFormData([JSON.parse(data), true]));
         // .then((data) => {
