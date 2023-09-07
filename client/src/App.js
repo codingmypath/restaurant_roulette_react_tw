@@ -19,7 +19,7 @@ function App() {
 
 
     function handleChange(event) {
-        const {name, value, type, checked} = event.target
+        const {name, value} = event.target
         setFormData(prevChoice => {
             return {
                 ...prevChoice,
