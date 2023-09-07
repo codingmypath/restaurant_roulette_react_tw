@@ -16,8 +16,6 @@ function App() {
         }
     )
 
-
-
     function handleChange(event) {
         const {name, value} = event.target
         setFormData(prevChoice => {
@@ -27,7 +25,6 @@ function App() {
             }
         })
     }
-
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -72,7 +69,6 @@ function App() {
                 <input className='rounded-md border-[1px] border-black text-md/[17px] mb-5' id="city" type="text" name="city" onChange={handleChange} value={formData.city || ""} placeholder="Zip or City & State" />
 
                 <h3 className="mt-5 p-1 text-xl">Price</h3>
-
                 <section className='flex flex-row justify-center flex-wrap mb-8' id="priceSection">
                 <label className="m-2.5" htmlFor="priceOne">
                     <input className='peer hidden' onChange={handleChange} id="priceOne" type="radio" value="1" name="price" checked={formData.price === "1"} required onInvalid="alert('You must fill out the form!');" />
