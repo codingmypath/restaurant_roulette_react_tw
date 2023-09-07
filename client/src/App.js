@@ -6,6 +6,7 @@ import { faTwitter, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-
 import './style.css';
 
 
+
 function App() {
     const [products, setProducts] = React.useState([]);
     const [formData, setFormData] = React.useState( 
@@ -44,7 +45,6 @@ function App() {
             setProducts(testarray);
           })
         // arr3 = Object.values(formData.data);    
-
     }
 
     return (

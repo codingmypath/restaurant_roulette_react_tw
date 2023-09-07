@@ -6,6 +6,9 @@ const yelp = require('yelp-fusion');
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
 
+const cors = require('cors')
+app.use(cors())
+
 app.set(express.static('public'));
 
 
