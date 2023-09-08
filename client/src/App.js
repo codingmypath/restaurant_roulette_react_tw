@@ -66,7 +66,7 @@ function App() {
             <form className='h-full w-full text-center m-auto rounded-smp pt-8 h-[625px]' onSubmit={handleSubmit}>
                 {/* <img className="logo" src={Logo} alt="Restaurant Roulette" /> */}
                 <h3 className='p-1 text-xl'>Location</h3>
-                <input className='rounded-md border-[1px] border-black text-md/[17px] mb-5' id="city" type="text" name="city" onChange={handleChange} value={formData.city || ""} placeholder="Zip or City & State" />
+                <input className='rounded-md border-[1px] border-black text-md/[17px] mb-5 pl-1' id="city" type="text" name="city" onChange={handleChange} value={formData.city || ""} placeholder="Zip or City & State" />
 
                 <h3 className="mt-5 p-1 text-xl">Price</h3>
                 <section className='flex flex-row justify-center flex-wrap mb-8' id="priceSection">
@@ -183,12 +183,12 @@ function App() {
             {/* <div>{formData.data}</div> */}
             </form>
         </section>
-        <section class="text-center bg-[url('./images/surround-food.jpg')] bg-no-repeat bg-[length:3000px] bg-center">
+        <section class="text-center bg-pasta-back bg-center bg-no-repeat bg-cover">
             {products.map((item) => (
             <section className="w-full m-auto h-[1000px] p-2.5" key={item.id}>
                 <h2 class="font-semibold text-xl mb-1 mt-0.5 pt-5">Restaurant</h2>
                 <h2 class="mt-0 text-[#A41629] text-2xl">{item.name}</h2>
-                <h2 class="mt-4 mb-1">Rating</h2>
+                <h2 class="mt-4 mb-1 text-xl font-semibold">Rating</h2>
                 <section class="flex flex-row justify-center">
                     {item.rating === 5 ? (<div class="p-0.5 text-2xl text-[#A41629]"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></div>) : 
                         item.rating === 4.5 ? (<div class="p-0.5 text-2xl text-[#A41629]"><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStarHalfStroke} /></div>) : 
@@ -206,7 +206,7 @@ function App() {
                 <h4 className="text-[#a41629] m-0 text-myRed text-xl">{item.location.display_address.join(' ')}</h4>
                 <h4 className="text-[#a41629] text-xl my-2.5">{item.display_phone}</h4>
                 <a className="text-[#899b0e] text-center p-2.5 hover:text-[#feaf14]" href={item.url}>More Information</a>
-                <img class="w-96 mb-2.5 rounded-sm m-auto p-2.5 pb-5" src={item.image_url} alt="Yelp restaurant" />
+                <img class="w-96 mb-2.5 rounded-sm m-auto p-2.5 pb-5 max-h-xs" src={item.image_url} alt="Yelp restaurant" />
             </section>
             ))}
         </section>
