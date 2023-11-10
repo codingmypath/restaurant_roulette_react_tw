@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../style.css';
+import { Footer } from './Footer';
 
 export const MyPicks = () => {
 
@@ -77,6 +78,7 @@ export const MyPicks = () => {
            }
            </div>
         </form>
+        <Footer />
         </div>
     )
 };
