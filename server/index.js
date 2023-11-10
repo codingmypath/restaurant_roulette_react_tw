@@ -15,7 +15,7 @@ app.set(express.static('public'));
 const api_key = process.env.API_KEY
 
 
-app.set('view engine', 'ejs');
+// app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 
