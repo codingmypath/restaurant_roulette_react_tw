@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors')
 app.use(cors())
 
-app.set(express.static('public'));
+// app.set(express.static('public'));
 
 
 const api_key = process.env.API_KEY
