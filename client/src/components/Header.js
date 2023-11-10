@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../images/restlogo.png'
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -9,8 +10,8 @@ const Header = () => {
                 <a href="/"><img className="float-left w-16" src={Logo} alt="Restaurant Roulette Logo" /></a>
                 <nav>
                     <ul className="font-semibold pt-2">
-                        <li className="list-none inline-block p-2.5"><a className="no-underline text-black block text-right hover:text-gray-500" href="/">Home</a></li>
-                        <li className="list-none inline-block p-2.5"><a className="no-underline text-black block text-right hover:text-gray-500" href="/mypicks">My Picks</a></li>
+                        <Link className="list-none inline-block p-2.5 no-underline text-black text-right hover:text-gray-500" to="/">Home</Link>
+                        <Link className="list-none inline-block p-2.5 no-underline text-black text-right hover:text-gray-500" to="/mypicks">My Picks</Link>
                     </ul>
                 </nav>
             </header>
