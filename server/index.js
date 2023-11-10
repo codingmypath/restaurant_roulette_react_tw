@@ -16,7 +16,8 @@ const api_key = process.env.API_KEY
 
 
 // app.set('view engine', 'ejs');
-app.use(express.static('public'));
+// app.use(express.static('public'));
+app.use(express.json());
 
 
 // app.use(bodyParser.urlencoded ({
