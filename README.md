@@ -1,7 +1,9 @@
  # <img src="client/src/images/restlogo.png" width="128"/>
  # Restaurant Roulette
 
-A full stack app that helps a user choose a restaurant when having a difficult time picking one. 
+ [Visit Restaurant Roulette website](https://restaurantroulette-rt.netlify.app/)
+
+Restaurant Roulette is a full stack app that helps a user choose a restaurant when having a difficult time picking one. 
 
 ---
 
