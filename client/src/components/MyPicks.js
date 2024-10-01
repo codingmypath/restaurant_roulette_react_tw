@@ -40,9 +40,9 @@ export const MyPicks = () => {
     return (
         <div className="bg-[url('./images/dips.jpg')] font-nunito text-center w-full h-screen bg-white bg-no-repeat bg-cover m-auto">
         <form  className="w-full flex flex-col mt-20 mx-auto my-0    h-full text-center m-auto rounded-smp pt-8 h-[625px]">
-            <label className='p-1 text-xl'>Restaurant(s)</label>
+            <label className='p-1 text-xl'>Restaurants</label>
             {myPick.map((item, index) => (
-                <div key={index} className='flex mx-auto'>
+                <div key={index} className='flex mx-auto gap-1'>
                     <div className='flex flex-col'>
                         <input  
                         name="restaurant"
@@ -50,21 +50,21 @@ export const MyPicks = () => {
                         value={item.restaurant} 
                         type="text"
                         onChange={(e) => handleChange(e, index)}
-                        className='border-2 w-52 m-auto mb-2' required />
+                        className='p-1 border-2 w-52 m-auto mb-2' required />
                        {myPick.length - 1 === index && myPick.length < 5 &&
                        (
                         <button 
                         onClick={handlePickAdd}
                         type="button" 
-                        className="bg-red-900 w-20 mb-2 text-white rounded-sm m-auto">Add</button>
+                        className="p-1 bg-[#feaf14] w-20 mb-2 text-black font-bold rounded-sm m-auto">Add</button>
                        )}
                         
                     </div>
-                    <div className='second'>
+                    <div className='second py-0.5'>
                         <button 
                         onClick={() => handlePickRemove(index)}
                         type="button" 
-                        className="bg-red-900 w-20 text-white rounded-sm m-auto">Remove</button>
+                        className="p-1 bg-[#C42B1C] w-20 text-white rounded-sm m-auto">Remove</button>
                     </div>
                  </div>
             ))}
@@ -74,7 +74,7 @@ export const MyPicks = () => {
             className="-white bg-[#899b0e] border-none cursor-pointer text-md/[17px] rounded-[3px] m-1.5 px-5 py-2 mb-2 hover:bg-[#718109]">Random Pick</button>
            <h2 className='mt-20 text-xl'>Pick:</h2>
            {    
-            renderSelection &&  <h2 className='text-5xl'>{randomSel}</h2>
+            renderSelection &&  <h2 className='p-3 text-5xl capitalize'>{randomSel}</h2>
            }
            </div>
         </form>

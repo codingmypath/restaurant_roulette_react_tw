@@ -11,7 +11,7 @@ const Header = () => {
                 <nav>
                     <ul className="font-semibold pt-2">
                         <Link className="list-none inline-block p-2.5 no-underline text-black text-right hover:text-gray-500" to="/">Home</Link>
-                        <Link className="list-none inline-block p-2.5 no-underline text-black text-right hover:text-gray-500" to="/mypicks">My Picks</Link>
+                        <Link className="list-none inline-block p-2.5 no-underline text-black text-right hover:text-gray-500" to="/mypicks">Custom Picks</Link>
                     </ul>
                 </nav>
             </header>
